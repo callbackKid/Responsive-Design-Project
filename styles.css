@@ -7,6 +7,7 @@
   font-weight: normal;
   font-size: 14px;
   letter-spacing: 0.01em;
+  box-sizing: border-box;
 }
 
 body {
@@ -116,7 +117,6 @@ body {
   max-width: 1170px;
   height: 270px;
   margin-top: 30px;
-  min-width: 0;
   margin-left: 20px;
 }
 
