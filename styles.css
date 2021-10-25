@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  margin: auto;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#logo1 {
+  visibility: hidden;
+}
+
+.browser {
+  height: 80px;
+  background: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: row;
+  max-width: 1444px;
+  margin: 0;
+}
+
+.logo {
+  margin-left: 135px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+  width: auto;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ebebf1;
+  box-sizing: border-box;
+  margin: 20px 40px 20px 40px;
+  background: #ffffff;
+}
+
+.searchicon {
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  line-height: 16px;
+  color: #bbc4d6;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-left: 1px solid #ebebf1;
+  padding-left: 19px;
+  margin-right: 135px;
+}
+
+.profilename {
+  width: 79px;
+  height: 17px;
+  line-height: 120%;
+  text-align: right;
+  color: #768298;
+  margin-right: 10px;
+}
+
+.partners {
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-width: 1170px;
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.companies {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0px;
+  max-width: 1170px;
+  height: 270px;
+  margin-top: 30px;
+  min-width: 0;
+  margin-left: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  flex-shrink: 3;
+  min-width: 0;
+  border-radius: 5px;
+  border: 1px solid #ebebf1;
+  box-sizing: border-box;
+}
+
+.cards:hover {
+  background: #ffffff;
+  border: 1px solid #ebebf1;
+  box-sizing: content-box;
+  box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
+    0px 0px 10px rgba(164, 164, 164, 0.03);
+  border-radius: 5px;
+  flex-grow: 0;
+}
+
+@media only screen and (min-width: 738px) and (max-width: 1444px) {
+  .logo {
+    margin-left: 20px;
+  }
+  .profile {
+    margin-right: 20px;
+  }
+
+  .cards {
+    width: 229px;
+    height: 120px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 738px) {
+  .profile {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+  }
+
+  .input-container {
+    height: 31px;
+    max-width: 768px;
+    border-radius: 6px;
+    margin: 0;
+    background: #ffffff;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 0%;
+  }
+  .logo {
+    margin-left: 20px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .man {
+    width: 40px;
+    height: 40px;
+    margin-top: 27px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  #logo1 {
+    visibility: visible;
+    margin-left: 20px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    margin-right: 28px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .header-mini {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .searchicon {
+    width: 16px;
+    height: 16px;
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    margin-right: 9px;
+    padding: 0;
+  }
+  .input {
+    width: 52px;
+    height: 16px;
+    left: 29px;
+    top: 4px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #bbc4d6;
+    opacity: 0.5;
+    margin-top: 12px;
+    margin-bottom: 2px;
+  }
+
+  .partners {
+    margin-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 160%;
+    /* identical to box height, or 45px */
+
+    text-transform: uppercase;
+  }
+
+  .cards {
+    width: 335px;
+    height: 140px;
+  }
+  .companies {
+    margin: 20px;
+  }
+}
