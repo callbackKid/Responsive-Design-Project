@@ -12,13 +12,16 @@
 body {
   margin: 0;
   padding: 0;
+  border: 0;
+}
+.global {
+  max-width: 1170px;
+}
+.user-icon {
+  display: none;
 }
 
-#logo1 {
-  visibility: hidden;
-}
-
-.browser {
+.header {
   height: 80px;
   background: #ffffff;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
@@ -28,12 +31,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: row;
-  max-width: 1444px;
-  margin: 0;
+  max-width: 1170px;
+  margin: auto;
 }
 
 .logo {
-  margin-left: 135px;
+  margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 40px;
@@ -79,7 +82,6 @@ body {
   align-items: center;
   border-left: 1px solid #ebebf1;
   padding-left: 19px;
-  margin-right: 135px;
 }
 
 .profilename {
@@ -192,8 +194,8 @@ body {
     margin-right: 25px;
     margin-bottom: 15px;
   }
-  #logo1 {
-    visibility: visible;
+  .user-icon {
+    display: inline-block;
     margin-left: 20px;
     margin-top: 17px;
     margin-bottom: 17px;
@@ -252,5 +254,6 @@ body {
   }
   .companies {
     margin: 20px;
+    justify-content: center;
   }
 }
