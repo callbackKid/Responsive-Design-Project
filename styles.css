@@ -46,7 +46,7 @@ body {
   border-radius: 8px;
 }
 
-.img7 {
+.image-card {
   width: 60px;
   height: 60px;
 }
@@ -63,7 +63,7 @@ body {
   background: #ffffff;
 }
 
-.searchicon {
+.search-icon {
   width: 16px;
   height: 16px;
   padding: 10px;
@@ -83,7 +83,7 @@ body {
   width: 100%;
 }
 
-.profile {
+.profile-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,7 +100,7 @@ body {
   margin-right: 10px;
 }
 
-.partners {
+.partners-container {
   font-family: "Roboto";
   font-size: 36px;
   font-style: normal;
@@ -113,7 +113,7 @@ body {
   margin-left: 20px;
 }
 
-.companies {
+.companies-container {
   display: flex;
   flex-direction: row;
   align-items: stretch;
@@ -164,7 +164,7 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  .profile {
+  .profile-container {
     display: none;
   }
 
@@ -193,13 +193,6 @@ body {
     border-radius: 8px;
   }
 
-  .man {
-    width: 40px;
-    height: 40px;
-    margin-top: 27px;
-    margin-right: 25px;
-    margin-bottom: 15px;
-  }
   .user-icon {
     display: inline-block;
     margin-left: 20px;
